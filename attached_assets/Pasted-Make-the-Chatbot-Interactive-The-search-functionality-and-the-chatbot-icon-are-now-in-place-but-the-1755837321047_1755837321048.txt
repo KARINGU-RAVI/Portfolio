@@ -1,0 +1,48 @@
+Make the Chatbot Interactive
+The search functionality and the chatbot icon are now in place, but the chatbot itself is static. The following instructions are to connect the front-end interface with the Gemini API to make the chatbot fully operational, as previously described.
+
+Implement the Click Event:
+
+Attach a JavaScript click event listener to the chatbot icon. When the icon is clicked, it must trigger a function that reveals the chatbot's UI (the modal or slide-out panel).
+
+Ensure the UI has an input field for user questions and a display area for the conversation history.
+
+Populate Initial Suggested Questions:
+
+Upon the chatbot's UI being displayed, immediately populate the conversation area with the pre-defined list of suggested questions. This list should be hardcoded into the front-end and should include prompts like:
+
+"What projects have you worked on?"
+
+"Tell me about your experience."
+
+"What are your key skills?"
+
+"How can I contact you?"
+
+Integrate with the Gemini API:
+
+Create a function that handles user input from the chatbot's text field. When a user types a question and submits it, this function will send the query to the Gemini API.
+
+API Call Setup: The API call must be configured to pass the following information:
+
+User's Query: The text typed by the user.
+
+Context/Training Data: Include all of the text content from your portfolio as the system or context prompt for the Gemini model. This is the crucial step to ensure the chatbot responds only with information from your portfolio.
+
+API Key: Use the provided key AIzaSyCtgV1GNWZc-x-OpILIaDZ8hL66hO5uS5c.
+
+Response Handling:
+
+Upon receiving a response from the Gemini API, the function should parse the data and extract the chatbot's answer.
+
+This answer should then be dynamically added to the conversation display area within the chatbot's UI.
+
+Enforce Chatbot Behavior:
+
+The chatbot's responses must remain strictly professional and limited to the information provided in the portfolio.
+
+If a user asks a question that cannot be answered using the portfolio's content, the chatbot must provide a professional response indicating this limitation (e.g., "I can only answer questions based on the information provided in this portfolio.").
+
+All interactions must be handled asynchronously to prevent the website from freezing while waiting for a response from the API.
+
+After implementing these steps, the chatbot should be fully functional, responding to user queries based solely on your portfolio's content.

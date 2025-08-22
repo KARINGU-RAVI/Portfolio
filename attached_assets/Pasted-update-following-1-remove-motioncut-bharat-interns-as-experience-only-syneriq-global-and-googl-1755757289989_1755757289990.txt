@@ -1,0 +1,56 @@
+update following :
+
+1. remove motioncut,bharat interns as experience only syneriq global and google cloud generative ai intern ,next24tech  will be displayed
+2. IN skills section remove level of proficiency like expert,advanced like this just remove it 
+3. update GitHub activity 
+4. remove Testimonials section
+5. update twitter account link : https://x.com/RAVIKaringu1
+6. update project links:
+   1.https://github.com/KARINGU-RAVI/Disaster_Prediction_Using_Machine_Learning_Alogrithms
+   2. https://github.com/KARINGU-RAVI/match_game
+   3. https://github.com/KARINGU-RAVI/Jobby-App
+7. add some more projects with these 
+Todos Application (ravitodolist0.ccbp.tech) git : https://github.com/KARINGU-RAVI/TodoApp
+A task management solution, designed to make life easier.
+● Streamlined task management through a combination of HTML, CSS, and Bootstrap for an intuitive
+interface.
+● Seamless CRUD operations through JavaScript event listeners and dynamic UI updates.
+● Secure task persistence with local storage methods, ensuring that your tasks are always available.
+Technologies used: HTML, CSS, JS, Bootstrap
+
+Countries Search (ravicountries0.ccbp.tech) git : https://github.com/KARINGU-RAVI/Destination-Search
+A global countries database and search engine, providing instant access to countries and their respective
+populations.
+● Asynchronous data retrieval through REST API calls, combined with Bootstrap and CSS for a
+responsive design.
+● Local search functionality through input elements, JavaScript event listeners and Array filter methods.
+Technologies used: HTML, CSS, JS, REST API Calls, Bootstrap
+
+Wikipedia Search Application (raviwikipedia0.ccbp.tech) 
+A Wikipedia search simplifies access to information with features like search, user-friendly interface,
+multimedia support etc..
+Technologies used: HTML, CSS, JavaScript, Bootstrap
+
+IPL Dashboard (https://raviiplboard.ccbp.tech/) git : https://github.com/KARINGU-RAVI/IPL-Dash-Board-App
+Built an interactive hub for IPL teams and matches information.
+● Navigated seamlessly with React Router, presenting team details and matches with REST API calls.
+● Included a custom 404 page for non-existent routes.
+Technologies used: React JS, Routing, REST API Calls, CSS, Bootstrap
+
+9. in Achievements & Awards section add images 
+JObby app: https://res.cloudinary.com/dumu7y8az/image/upload/v1755757039/Screenshot_2025-08-21_114709_thwfos.png
+emoji match game : 
+https://res.cloudinary.com/dumu7y8az/image/upload/v1755756990/Screenshot_2025-08-21_114621_rqodgo.png
+topper : https://res.cloudinary.com/dumu7y8az/image/upload/v1755756938/Topper_of_class_jqytgd.jpg
+debugging :
+https://res.cloudinary.com/dumu7y8az/image/upload/v1755756938/Debugging_2k25_kb33j1.jpg
+technical quiz :
+https://res.cloudinary.com/dumu7y8az/image/upload/v1755756938/Technical_Quiz_dejadd.jpg
+debugging 2k23:
+https://res.cloudinary.com/dumu7y8az/image/upload/v1755756938/Debugging_2k23_dq9nmz.jpg
+nptel :
+https://res.cloudinary.com/dumu7y8az/image/upload/v1755756938/NPTEL_certificate_uhm4is.jpg
+logo for website :
+https://res.cloudinary.com/dumu7y8az/image/upload/v1689959301/ravikaringu_armwif.png
+
+10 . make the website look like a human created with dynamic loading ,animations, Trasitions, hover fetatres etc

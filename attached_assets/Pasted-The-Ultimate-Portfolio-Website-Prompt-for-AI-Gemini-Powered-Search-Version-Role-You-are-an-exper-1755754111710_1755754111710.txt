@@ -1,0 +1,80 @@
+The Ultimate Portfolio Website Prompt for AI (Gemini-Powered Search Version)
+Role: You are an expert full-stack web developer specializing in creating modern, interactive, and high-performance personal portfolio websites using Next.js (a React framework) and Tailwind CSS.
+Project Goal: Generate the complete code for a highly advanced and interactive personal portfolio website for me, Ravi Karingu. The website must be single-page, visually stunning, and powered by the Gemini API for an intelligent, conversational search experience. It should be fully responsive and optimized for performance.
+1. Core Personalization & Design Foundation
+My Name: Ravi Karingu
+My Profile Image: Use this URL directly: https://res.cloudinary.com/dumu7y8az/image/upload/v1740764167/My_Photo_optimized_ahbfx5.jpg
+Design Inspiration: Use these two links as the primary visual and structural inspiration for the design. The goal is a clean, modern, professional aesthetic with smooth animations and a premium feel.
+Reference 1: https://ravikaringu.vercel.app/
+Reference 2: https://karinguravi.netlify.app/
+2. Technology Stack
+Framework: Next.js (for performance, SEO, and API routes)
+Styling: Tailwind CSS (for modern, utility-first styling)
+Icons: Use the react-icons library.
+Animations: Use framer-motion for all UI animations.
+API Communication: Use axios for making API calls from the frontend to our backend and from the backend to the Gemini API.
+AI Integration: Google Gemini API (via @google/generative-ai SDK).
+3. Website Structure & Sections
+Create a single-page application with smooth scrolling to the following sections. Implement dynamic loading for components and content.
+Navbar: A sleek, floating navbar with links to all sections, the theme-change toggle, and the AI search bar.
+Home/Hero Section:
+Display my profile image, name, and title ("Full Stack Developer & AI Enthusiast").
+Include an impactful bio and social media links (GitHub, LinkedIn).
+Advanced Visual: Implement a subtle, interactive 3D animation using Three.js (@react-three/fiber).
+Work Experience Section:
+Advanced Feature: Interactive Timeline. Display my work history as an animated vertical timeline.
+Skills Section:
+Group skills into categories.
+Advanced Feature: Skills with Real-Time Proof. Make skills clickable to show mini-demos or relevant projects.
+Projects Section:
+Advanced Feature: Project Showcase with Live Demos. Display projects in a grid of cards with buttons for "Live Demo," "View Code," and "Case Study."
+Achievements Section:
+Advanced Feature: Gamified Resume. Display achievements and certifications as unlockable "badges."
+Resume Section:
+Advanced Feature: Downloadable Resume in Multiple Formats. Provide buttons to download the resume in PDF, DOCX, etc.
+Blog / Knowledge Sharing Section:
+Integrate a simple blog with the 3 most recent articles on the main page.
+Contact Section:
+Include a professional contact form.
+Advanced Feature: Chatbot / WhatsApp API Integration. Add a floating action button for chat.
+Footer: Include social media links and copyright info.
+4. Core & Next-Level Features (Must-Haves)
+Please implement all of the following advanced features:
+🔹 Dynamic Loading: Ensure all components and images are lazy-loaded.
+🔹 Dark/Light Mode Toggle: Create a smooth theme-switcher with preferences saved in local storage.
+🔹 GitHub Activity Feed: Fetch and display my latest public activity from the GitHub API.
+🔹 Testimonials Carousel: Add a clean, auto-scrolling carousel for testimonials.
+🔹 [CRITICAL FEATURE] AI-Powered Portfolio Search (with Gemini API):
+User Experience: Add a search bar to the navbar. Visitors should be able to type natural language queries. For example:
+“Show me Ravi’s projects that use React and a Node.js backend.”
+“Which projects are related to fintech?”
+“What was his role at Tech Solutions Inc.?”
+Technical Implementation:
+Frontend: When the user submits a query, the frontend will send this query to a new, dedicated backend API route (e.g., /api/portfolio-search).
+Backend (Next.js API Route):
+Create the file pages/api/portfolio-search.js.
+This API route will securely access the GEMINI_API_KEY from environment variables (.env.local).
+It will receive the user's query from the frontend.
+It must then construct a detailed prompt for the Gemini API. This prompt will include all of my portfolio data (a JSON string of my projects, skills, work experience, and achievements) as context, along with the user's query.
+It will then call the Gemini API with this combined prompt.
+Gemini API Logic: The prompt sent to Gemini should instruct it to act as an intelligent assistant and, based on the provided portfolio data, return a structured list of IDs (e.g., project IDs, experience IDs) that directly answer the user's query.
+Response to Frontend: The backend API route will receive the response from Gemini and forward the structured list of IDs back to the frontend.
+Dynamic Filtering: The frontend React components will then use this list of IDs to dynamically highlight, filter, or scroll to the relevant sections/cards on the page, providing an instant and intelligent response to the user.
+Example Prompt Structure (for the backend to send to Gemini):
+code
+JSON
+{
+  "contents": [{
+    "parts": [{
+      "text": "You are an intelligent AI assistant for Ravi Karingu's personal portfolio. Your task is to analyze the user's query and the provided JSON data about Ravi's career. Return only a JSON array of the unique 'id' fields of the items that best match the query. User Query: 'Show me projects that use a modern backend'. Portfolio Data: '[{ \"id\": \"proj-01\", \"title\": \"E-commerce Platform\", \"techStack\": [\"React\", \"Node.js\", \"MongoDB\"]}, { \"id\": \"exp-02\", \"company\": \"Tech Solutions Inc.\", \"role\": \"Backend Developer\"}]'"
+    }]
+  }]
+}
+5. Final Code Generation Instructions
+File Structure: Organize the code into a logical Next.js project structure. Create a dedicated portfolio-data.js file to store all the text, projects, and experience details in a structured format (JSON). This will make it easy to import and use in the UI and the backend API route.
+API Key Security: Create a .env.local.example file instructing me to create a .env.local file and add my GEMINI_API_KEY there. Ensure the code loads this key securely on the server-side only.
+Placeholders: Use realistic placeholder data in portfolio-data.js.
+Comments: Add comments to explain the logic, especially for the /api/portfolio-search route and the interaction between the frontend and backend for the search feature.
+Please generate the complete, production-ready code based on all the requirements above.
+
+My resume link : https://drive.google.com/file/d/1sfHsTzi_OMtzj8_GBgeZkmiraeps472-/view?usp=sharing

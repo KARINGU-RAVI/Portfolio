@@ -1,0 +1,29 @@
+Please modify the existing portfolio website to include two main functionalities: an AI-powered chatbot and enhanced navbar search functionality.
+
+**Task 1: AI-Powered Chatbot Integration**
+
+1.  **Placement and Icon:**
+    * Replace the existing WhatsApp icon located in the bottom-right section of the website with a new "Chatbot" icon. This new icon should visually represent a chatbot or conversational AI.
+2.  **Chatbot Activation and Initial Interaction:**
+    * When a user clicks on the new Chatbot icon, it should open a chatbot interface (e.g., a modal or a slide-out panel) in the bottom-right section of the screen.
+    * Upon opening, the chatbot should immediately suggest a list of relevant questions related to my personal and professional information found in the portfolio (e.g., "What projects have you worked on?", "What are your key skills?", "Tell me about your experience in X field?").
+    * Users should also be able to type and ask their own questions in an input field within the chatbot interface.
+3.  **Chatbot Knowledge and Behavior (Gemini API Integration):**
+    * The chatbot's "brain" must be powered by the Gemini API.
+    * **Gemini API Key:** Use the provided API key: `AIzaSyCtgV1GNWZc-x-OpILIaDZ8hL66hO5uS5c`.
+    * **Training Data:** The chatbot must be exclusively trained on *all* personal and professional information present within the portfolio website. Assume all visible text content on the portfolio is the source material for the chatbot's knowledge base.
+    * **Response Style:**
+        * The chatbot must respond only in a professional manner.
+        * It should strictly adhere to the information found in the portfolio; it must *not* generate responses based on external knowledge or engage in unusual/off-topic conversations.
+        * Responses should be concise and directly answer questions related to the portfolio content. For example, if a user asks "List your projects," the chatbot should respond by listing the project names as they appear in the portfolio. If asked about a specific skill, it should provide details about that skill from the portfolio.
+        * It should clearly indicate if it cannot find relevant information in the portfolio for a given query (e.g., "I can only provide information based on the portfolio content, and I don't have details on that topic here.").
+
+**Task 2: Enhanced Navbar Search Functionality**
+
+1.  **Location:** The search functionality in the navbar needs to be improved.
+2.  **Search Logic:**
+    * When a user enters text into the search bar, the website should actively search through the portfolio content.
+    * **Navigation for Sections:** If the search term directly matches a section title (e.g., "Projects," "Skills," "Experience"), the website should smoothly navigate the user to that specific section of the portfolio.
+    * **Listing Results:** If the search term matches content within various sections (e.g., "Python" might be found in "Skills" and "Projects"), the search functionality should display a clear list of results or links to the relevant parts of the portfolio.
+3.  **Empty Search State:**
+    * If the search input field in the navbar is empty, the navbar (and the entire website) should revert to its initial, normal appearance and behavior, without displaying any search results or special states.
